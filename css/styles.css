@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box; /*ajusta as tamaño de la caja*/
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+/*Comienzo de header*/
+header {
+  background-color: black;
+}
+#logos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#copa img {
+  width: 100px;
+}
+#fifa img {
+  width: 191px;
+}
+/*Fin header*/
+
+/*Comienzo de nav*/
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  background-color: #eee;
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px #aaa;
+  text-align: center;
+  text-decoration: none;
+  color: #555;
+}
+
+nav a[aria-current='page'] {
+  color: #000;
+  background-color: #d4d4d4;
+}
+
+.activo {
+  /*border-bottom: #555 solid 3px;*/
+  box-shadow: 5px 4px darkgray;
+}
+
+/*Fin de nav*/
+
+/*Comienzo de main*/
+section {
+  width: 900px;
+  height: 400px;
+  background-color: #555;
+
+  margin: 0 auto;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section div {
+  width: 250px;
+  background-color: rgb(31, 58, 99);
+  height: 200px;
+  margin: 1px;
+}
+#intro {
+  background-image: url(https://images.unsplash.com/photo-1593959734793-6e92d102da1e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  /*background-repeat: no-repeat;
+  background-size: cover;*/
+  box-shadow: 7px 5px #2e2b2b4d;
+  border-radius: 15px;
+}
+
+#eeuu {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1280px-Flag_of_the_United_States.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mx {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/960px-Flag_of_Mexico.svg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#can {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Canada_%283-2%29.svg/1280px-Flag_of_Canada_%283-2%29.svg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*videos*/
+#video{
+  width: 600px;
+  height: 300px;
+}
+
+/*Fin de main*/
+
+/*Comienzo de footer*/
+
+footer {
+  background-color: #000;
+  color: white;
+  font-size: smaller;
+  display: flex; /*mostrar el contenido ajustado*/
+  flex-wrap: wrap;
+  /*align-items: center;
+  justify-content: center;*/
+  justify-content: space-evenly;
+}
+#Colegio {
+  width: 33%;
+  background-color: red;
+  padding: 5px;
+}
+footer a {
+  color: #aaa;
+}
+
+#Alumno {
+  width: 33%;
+  background-color: yellow;
+  color: #aaa;
+  padding: 5px;
+}
+
+#Sociales {
+  width: 33%;
+  background-color: lightblue;
+  padding: 5px;
+}
+#Sociales img {
+  width: 50px;
+}
+
+/*final de footer*/
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
