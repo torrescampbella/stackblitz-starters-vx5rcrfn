@@ -59,13 +59,17 @@ nav a[aria-current='page'] {
   /*border-bottom: #555 solid 3px;*/
   box-shadow: 5px 4px darkgray;
 }
+nav a:hover{
+  background-color: red;
+
+}
 
 /*Fin de nav*/
 
 /*Comienzo de main*/
 section {
   width: 900px;
-  height: 400px;
+  height: 453px;
   background-color: #555;
 
   margin: 0 auto;
@@ -91,19 +95,19 @@ section div {
 }
 
 #eeuu {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1280px-Flag_of_the_United_States.png);
+  background-image:url(../img/eeuu.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #mx {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/960px-Flag_of_Mexico.svg.png);
+  background-image: url(../img/mx.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #can {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Canada_%283-2%29.svg/1280px-Flag_of_Canada_%283-2%29.svg.png);
+  background-image: url(../img/can.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -114,7 +118,48 @@ section div {
   height: 300px;
 }
 
+
 /*Fin de main*/
+/*presentacion*/
+#presentacion { 
+
+  height: 600px;
+}
+
+.videos_locales{ 
+  background-color: #555;
+  width: 630px;
+  
+  border: #000 solid 7px;
+  box-shadow: #555 5px 2px;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/*Estadios*/
+.estadosunidos h2{ 
+  text-align: center;
+}
+.mexico h2{
+  text-align: center;
+}
+.canada h2{
+  text-align: center;
+}
+
+table, tr, td,th{
+  border: solid red 2px;
+  border-collapse: collapse;
+  width: 400px;
+  margin: 0 auto;
+  }
+  tr :hover{
+  background-color: #555;
+  }
+  td img{
+  width: 200px;
+  }
 
 /*Comienzo de footer*/
 
