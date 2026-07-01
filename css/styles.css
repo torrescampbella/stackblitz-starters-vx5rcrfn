@@ -209,3 +209,75 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+/*campeones*/
+
+
+/****//* Contenedor principal: Divide el diseño en dos columnas (continente y paises)*/
+.campeones{
+  display: grid;
+  grid-template-columns: 1fr 3fr;/* 25% para continente, 75% para paises*/
+  border: 2px solid black;
+  width: 100%;
+
+}
+
+/*Columna Izquierda: Continente ocupará todo el alto disponible automaticamente*/
+.continente{
+border-right: 2px solid black;
+padding: 15px 10px;
+font-weight: bold;
+font-size: 14px;
+
+}
+
+/*Columna Derecha: Se convierte en otro Grid para organizar el contenido interno*/
+.paises{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+}
+
+/* El título del pais ocupa las dos columnas*/
+.pais{
+  grid-column: span 2;
+padding: 10px;
+font-weight: bold;
+font-size: 13px;
+border-bottom: 2px solid black;
+}
+
+.foto{
+min-height: 120px;
+padding: 35px 10px 10px 10px;
+font-size: 11px;
+border-bottom: 2px solid black;
+}
+
+.foto :nth-of-type(odd) {
+  border-right: 2px solid black;
+  
+}
+
+/* La reseña se salta al fondo ocupando las dos columnas*/
+.resenia{
+  grid-column: span 2;
+  padding: 10px;
+  min-height: 80px;
+  font-size: 11px;
+}
+
+/*datos de campeones*/
+
+.paises .foto img {
+width: 100%;
+
+}
+
+.resenia p{
+  font-size: 16px;
+}
+
+
+
+
+  
